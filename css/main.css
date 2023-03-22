@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Arvo:wght@100;200;300;400;500;600;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Arvo', serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background: #121318; */
+  overflow-x: hidden;
+  /* background: url('../images/imad-alassiry-0161tDc9kjs-unsplash.jpg'); */
+  background: url('../images/ramadan_kareem_bgdt_513.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+}
+.hidden{
+  display: none;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin:  0 auto;
+}
+.container2{
+  width: 100%;
+  max-width: 1500px;
+  margin:  0 auto;
+}
+.active{
+background: #5d3f6a !important;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nomoz-vaqtlari{
+  width: 100% !important;
+  height: 700px;
+  /* background-color:#121318; */
+  border-radius: 8px;
+  /* margin-left: 750px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 50px 0px;
+}
+  h2{
+  font-family: 'Arizonia', cursive;
+  font-size: 53px;
+  /* font-size: 72px; */
+  word-spacing: 10px;
+  background: -webkit-linear-gradient(#fff 5%,#C59826 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin-top: 100px; */
+  width: fit-content;
+} 
+
+.nomoz-vaqtlari__card{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  width: fit-content;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 560px;
+  background-color:#121318;
+
+  
+}
+.nomoz-vaqtlari__card--items{
+  width: 500px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  gap: 50px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.nomoz-vaqtlari__card--items div:first-of-type p{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.nomoz-vaqtlari__card--items div:first-of-type{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nomoz-vaqtlari__card--items div:last-of-type{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nomoz-vaqtlari__card--items div:last-of-type i {
+  font-size: 20px;
+}
+.nomoz-vaqtlari__card--items div:first-of-type img{
+  margin-bottom:9px;
+  background: blueviolet;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 5px;
+  filter:grayscale(80%);
+}
+.current-prayer{
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  margin-left: 600px;
+}
+.flex{
+  display: flex;
+}
+.ramadan{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 500px;
+}
+.sahar p:first-of-type,
+.iftar p:first-of-type{
+  font-family: 'Montserrat', sans-serif;
+  width: 120px;
+  background: green;
+  text-align: center;
+  height: 30px;
+  padding: 5px;
+  letter-spacing: 2px;
+  border-radius: 0px 16px 0px 16px;  
+}
+.sahar p:first-of-type{
+  border-radius:16px 0px 16px 0px;
+}
+.iftar p:last-of-type,
+.sahar p:last-of-type{
+  text-align: center;
+  margin-top: 8px;
+  line-height: 150%;
+  letter-spacing: 3px;
+}
