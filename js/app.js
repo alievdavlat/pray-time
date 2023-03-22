@@ -1,4 +1,16 @@
-''
+const input = document.querySelector('#input'),
+form = document.querySelector('#form')
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const inputvalue = input.value
+  form.reset()
+  getData(inputvalue)
+.then((data) => {
+  updateUi(data);
+})
+
+})
+
 const getData  = async (city) => {
   const base = `https://islomapi.uz/api/present/day?region=${city}`
   
@@ -24,16 +36,23 @@ iftor = document.querySelector('.iftarlik')
 function updateUi(data) {
   let arr = []
   arr.push(data)
-  console.log(arr[0].valueOf());
-title.textContent = `${arr[0].region} , ${arr[0].date},  ${arr[0].weekday}`
-sahar.textContent = arr[0].times.tong_saharlik
-iftor.textContent = arr[0].times.shom_iftor
-// UntilPreviusPrayerName.textContent = arr[0]
-
-  arr.forEach(items => {
-   
+prayParent.innerHTML = ''
+  arr.forEach(items => {   
     prayParent.innerHTML +=`
-    
+<h3 id="title">${items.region} , ${items.date},  ${items.weekday}</h3> 
+<section class="ramadan">
+<div class="sahar">
+  <p>sahar</p>
+  <p class="saharlik">${items.times.tong_saharlik}</p>
+</div>
+<div>
+</div>
+<div class="iftar">
+  <p>Iftar</p>
+  <p class="iftarlik">${items.times.shom_iftor}</p>
+</div>
+</section>  
+
     <div class="nomoz-vaqtlari__card--items active">
     <div>
       <p>bomdod</p>
@@ -88,15 +107,9 @@ iftor.textContent = arr[0].times.shom_iftor
       <p>${items.times.hufton}</p>    
     </div>
   </div>
-
-
     `
   });
 }
-getData('Toshkent')
-.then((data) => {
-  updateUi(data);
-})
 
 
 /* 

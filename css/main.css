@@ -18,9 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   /* background: #121318; */
-  overflow-x: hidden;
-  /* background: url('../images/imad-alassiry-0161tDc9kjs-unsplash.jpg'); */
-  background: url('../images/ramadan_kareem_bgdt_513.jpg');
+  /* overflow-x: hidden; */
+  background: url('../images/imad-alassiry-0161tDc9kjs-unsplash.jpg');
+  /* background: url('../images/ramadan_kareem_bgdt_513.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,20 +52,18 @@ background: #5d3f6a !important;
 main{
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .nomoz-vaqtlari{
   width: 100% !important;
   height: 700px;
   /* background-color:#121318; */
-  border-radius: 8px;
+  border-radius: 20px !important;
   /* margin-left: 750px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  padding: 0px 0px 50px 0px;
 }
   h2{
   font-family: 'Arizonia', cursive;
@@ -87,10 +85,8 @@ main{
   row-gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: 560px;
+  margin-left: 400px !important;
   background-color:#121318;
-
-  
 }
 .nomoz-vaqtlari__card--items{
   width: 500px;
@@ -164,4 +160,41 @@ main{
   margin-top: 8px;
   line-height: 150%;
   letter-spacing: 3px;
+}
+.inputGr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn{
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: rgb(116, 153, 245);
+  margin-top: 8px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: -190px;
+}
+label{
+  margin-left: -105px;
+  margin-bottom: 10px;
+  color:rgb(31, 86, 226);
+  font-weight: bold;
+}
+.input{
+  width: 300px;
+  height: 45px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 50%;
+  /* left: 20%; */
+  border: none;
+  outline: none;
+  border-radius: 16px 0px 16px 0px;
+  padding: 10px 20px;
+  color: red;
+  font-size: 20px;
 }
